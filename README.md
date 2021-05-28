@@ -1,5 +1,5 @@
-# Extravaganza
-A random movie recommendation app according rating and genre entered by user.
+# Extravaganza 
+A random movie recommendation app according to rating and genre entered by the user.
 
 Light mode: https://colorhunt.co/palette/264984
 Dark mode: https://colorhunt.co/palette/281949
