@@ -1,0 +1,66 @@
+.font-control {
+  &-h1{
+    font-size: 3rem;
+  }
+  &-h2{
+    font-size: 2rem;
+  }
+  &-h3{
+    font-size: 1.5rem;
+  }
+}
+
+.Reglora {
+  font-family: $font2;
+  font-weight: 400;
+}
+
+.Semilora {
+  font-family: $font2;
+  font-weight: 600;
+}
+
+.Boldlora {
+  font-family: $font2;
+  font-weight: 700;
+}
+
+.RegLato {
+  font-family: $font1;
+  font-weight: 400;
+}
+
+.SemiLato {
+  font-family: $font1;
+  font-weight: 600;
+}
+
+.BoldLato {
+  font-family: $font1;
+  font-weight: 700;
+}
+
+.lightClr1 {
+    color: $light-color1;
+}
+
+.darkClr1 {
+    color: $dark-color1;
+}
+
+.lightClr2 {
+  color: $light-color2;
+}
+
+.darkClr2 {
+  color: $dark-color2;
+}
+
+.lightFg{
+  color: $light-fg;
+}
+
+.darkFg {
+  color: $dark-fg;
+}
+

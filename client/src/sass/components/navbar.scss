@@ -1,0 +1,24 @@
+.navbar{
+display: flex;
+justify-content: space-between;
+margin-bottom: 0rem;
+    &-buttonbox{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        margin-top: 1.3rem;
+        margin-right: 1rem;
+        padding: 0 1rem;
+    }
+    &-dark{
+    background-color: $dark-bg;
+    }
+    &-light{
+    background-color: $light-bg;
+    box-shadow: 0px 4px 4px $light-shadownavbar;
+    }
+}
+
+.logo-box{
+ margin: 0.5rem 1rem;
+}

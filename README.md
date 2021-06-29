@@ -9,3 +9,5 @@ Rating and genre option etc.
 Also, the source form where the user can watch the particular movie or series will also be generated.
 
 UI (Figma) : https://www.figma.com/file/Rz5gyydBu1NfTLFfgEalae/Extravanganza?node-id=0%3A1
+
+Important doc for frontend: https://reactrouter.com/

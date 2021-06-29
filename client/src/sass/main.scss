@@ -1,0 +1,14 @@
+//base
+@import "./base/variables.scss";
+@import "./base/root.scss";
+
+//components
+@import "./components/navbar.scss";
+@import "./components/button.scss";
+@import "./components/embossedbutton.scss";
+@import "./components/fontControl.scss";
+@import "./components/typography.scss";
+@import "./components/subtypo.scss";
+
+//pages
+@import "./pages/home.scss";

@@ -1,0 +1,29 @@
+//light mode
+$light-bg: #ff7171;
+$light-fg: #f5c0c0;
+$light-color1: #9fd8df;
+$light-color2: #f0e4d7;
+$light-shadowbtn: rgba(245, 192, 192, 0.5);
+$light-shadownavbar: rgba(245, 192, 192, 0.25);
+
+//dark mode
+$dark-bg: #21094e;
+$dark-fg: #511281;
+$dark-color1: #4ca1a3;
+$dark-color2: #a5e1ad;
+
+//fonts and type faces
+$font1: "Lato", sans-serif;
+$font2: 'Shadows Into Light', cursive;
+
+//exporting to be used in javascript
+:export {
+  lightBackground: $light-bg;
+  darkBackground: $dark-bg;
+  lightForeground: $light-fg;
+  darkForeground: $dark-fg;
+  lightColor1: $light-color1;
+  lightColor2: $light-color2;
+  darkColor1: $dark-color1;
+  darkColor2: $dark-color2;
+}
