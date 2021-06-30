@@ -1,7 +1,11 @@
-.home-light{
-background-color: $light-bg;
-}
-
-.home-dark{
-background-color: $dark-bg;
+.home{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    &-light{
+    background-color: $light-bg;
+    }
+    &-dark{
+    background-color: $dark-bg;
+    }
 }

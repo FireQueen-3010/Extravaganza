@@ -1,10 +1,11 @@
 import { useState, useEffect } from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import Home from './pages/Home';
+import Home from './pages/Home/Home';
 import About from './pages/About';
 import Login from './pages/Login';
 import GetStarted from './pages/GetStarted';
 import Navbar from './components/Navbar';
+import Footer from './components/Footer';
 import PageNotFound from './pages/PageNotFound';
 
 function App() {
@@ -27,26 +28,27 @@ function App() {
 
 
   return (
-    <div className="App">
+    <div className={`App ${theme=='dark'?"App-dark":"App-light"}`}>
      <Router>
      <Navbar handleClick={toggleTheme} theme={theme} />
      <Switch>
-          <Route exact={true} path="/about">
+          <Route exact path="/about">
             <About theme={theme}/>
           </Route>
-          <Route exact={true} path="/login">
+          <Route exact path="/login">
             <Login theme={theme}/>
           </Route>
-          <Route exact={true} path="/">
+          <Route exact path="/">
             <Home theme={theme}/>
           </Route>
-          <Route exact={true} path="/start">
+          <Route exact path="/start">
             <GetStarted theme={theme}/>
           </Route>
           <Route>
             <PageNotFound theme={theme}/>
           </Route>
         </Switch>
+        <Footer theme={theme}/>
      </Router>
     </div>
   );

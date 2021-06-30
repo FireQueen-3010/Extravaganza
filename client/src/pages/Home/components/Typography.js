@@ -1,4 +1,4 @@
-import FontControl from "./FontControl";
+import FontControl from "../../../components/FontControl";
 
 export default function Typography(props) {
   const dark = props.theme;

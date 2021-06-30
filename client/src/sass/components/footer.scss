@@ -1,0 +1,33 @@
+.footer{
+  // margin-top: -5%;
+  padding: 0;
+  a{
+    text-decoration: none;
+  }
+ &-light{
+   background-color: $light-bg;
+   border: 5px solid $light-shadownavbar;
+ }
+ &-dark{
+    background-color: $dark-bg;
+    border: 5px solid $dark-shadownavbar;
+ }
+ &-inner{
+   display: flex;
+  //  margin-left: 30%;
+   text-align: center;
+   justify-content: center;
+   &--1{
+   margin-top: 0.5rem;
+   }
+   &--2{
+   margin-top: 0.5rem;
+   }
+   &--3{
+   margin-top: 0.5rem;
+   }
+   &--3{
+     margin-right: 1%;
+   }
+ }
+}
