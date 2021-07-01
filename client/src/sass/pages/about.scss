@@ -1,0 +1,20 @@
+.about {
+  height: 100vh;
+  display: flex;
+  text-align: justify;
+  &-text {
+    margin: 7rem 3rem;
+    &--1{
+        margin-bottom: 2rem;
+    }
+    &--3{
+        margin-bottom: 2rem;
+    }
+  }
+  &-light {
+    background-color: $light-bg;
+  }
+  &-dark {
+    background-color: $dark-bg;
+  }
+}

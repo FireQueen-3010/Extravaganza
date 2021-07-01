@@ -28,9 +28,9 @@ export default function Typography(props) {
       </div>
       <div className="typography-2">
         {dark ? (
-          <img src="Images/Ambassador-Dark.svg" className="typography-2--img"></img>
+          <img className="ambaasador-dark" src="Images/Ambassador-Dark.svg" className="typography-2--img"></img>
         ) : (
-          <img src="Images/Ambassador-Light.svg" className="typography-2--img"></img>
+          <img className="ambaasador-light" src="Images/Ambassador-Light.svg" className="typography-2--img"></img>
         )}
       </div>
     </div>
