@@ -1,9 +1,21 @@
+import FontControl from "../components/FontControl";
+import EmbossedButton from "../components/EmbossedButton";
 
-
-export default function PageNotFound() {
+export default function PageNotFound(props) {
+    const dark=props.theme
     return (
-        <div>
-            
+        <div className={`not-found ${dark?"not-found--dark":"not-found--light"}`}>
+        <div className={"not-found--text"}>
+       <FontControl
+          size="bold"
+          font="lato"
+          theme={dark}
+          type="h2"
+          text="Sorry, guess you landed at the wrong place! Let us head back home?!"
+          clr={dark ? "darkClr1" : "lightClr1"}
+        />
+        </div>
+        <EmbossedButton text="Home" link="/" theme={dark}/>    
         </div>
     )
 }

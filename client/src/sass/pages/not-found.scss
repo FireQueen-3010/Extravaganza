@@ -1,0 +1,16 @@
+.not-found{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    &--text{
+        margin: 15% 0 3% 0;
+    }
+&--dark{
+    background-color: $dark-bg;
+}
+&--light{
+    background-color: $light-bg;
+}
+}
