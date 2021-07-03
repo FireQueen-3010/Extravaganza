@@ -5,6 +5,9 @@ export default function PageNotFound(props) {
     const dark=props.theme
     return (
         <div className={`not-found ${dark?"not-found--dark":"not-found--light"}`}>
+        <div className="not-found--pic">
+        {dark?<img className="not-found--pic-dark" src="Images/NotFound-Dark.svg"></img>:<img className="not-found--pic-light" src="Images/NotFound-Light.svg"></img>}
+        </div>
         <div className={"not-found--text"}>
        <FontControl
           size="bold"
