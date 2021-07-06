@@ -1,14 +1,14 @@
 .font-control {
-  &-h1{
+  &-h1 {
     font-size: 3rem;
   }
-  &-h2{
+  &-h2 {
     font-size: 2rem;
   }
-  &-h3{
+  &-h3 {
     font-size: 1.5rem;
   }
-  &-h4{
+  &-h4 {
     font-size: 1.2rem;
   }
 }
@@ -44,11 +44,11 @@
 }
 
 .lightClr1 {
-    color: $light-color1;
+  color: $light-color1;
 }
 
 .darkClr1 {
-    color: $dark-color1;
+  color: $dark-color1;
 }
 
 .lightClr2 {
@@ -59,7 +59,7 @@
   color: $dark-color2;
 }
 
-.lightFg{
+.lightFg {
   color: $light-fg;
 }
 
@@ -67,11 +67,10 @@
   color: $dark-fg;
 }
 
-.lightBg{
+.lightBg {
   color: $light-bg;
 }
 
 .darkBg {
   color: $dark-bg;
 }
-

@@ -58,7 +58,7 @@ export default function FontControl(props) {
         >
           {text}
         </h4>
-      ): (
+      ) : (
         <p
           className={`font-control-p ${
             dark ? "font-control--dark" : "font-control--light"

@@ -1,29 +1,29 @@
-.navbar{
-display: flex;
-justify-content: space-between;
-    &-buttonbox{
-        display: flex;
-        justify-content: center;
-        text-align: center;
-        margin-top: 1.3rem;
-        margin-right: 1rem;
-        padding: 0 1rem;
-    }
-    &-dark{
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  &-buttonbox {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 1.3rem;
+    margin-right: 1rem;
+    padding: 0 1rem;
+  }
+  &-dark {
     background-color: $dark-bg;
     //  box-shadow: 0 8px 6px -6px $dark-shadownavbar;
     border: 5px solid $dark-shadownavbar;
-    }
-    &-light{
+  }
+  &-light {
     background-color: $light-bg;
     // box-shadow: 0 8px 6px -6px $light-shadownavbar;
     border: 5px solid $light-shadownavbar;
-    }
+  }
 }
 
-.logo-box{
-    &--light{
+.logo-box {
+  &--light {
     margin: 0.2rem 0rem;
-    }
-//  margin: 0.5rem 1rem;
+  }
+  //  margin: 0.5rem 1rem;
 }

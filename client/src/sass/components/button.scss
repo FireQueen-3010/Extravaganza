@@ -7,15 +7,14 @@
     margin-top: 1rem;
     text-align: center;
   }
-  &-dark{
+  &-dark {
     a {
-        color: $dark-color2;
-      }
-
+      color: $dark-color2;
+    }
   }
-  &-light{
+  &-light {
     a {
-        color: $light-color1;
-      }
+      color: $light-color1;
+    }
   }
 }
