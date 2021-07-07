@@ -4,9 +4,9 @@
   width: 5rem;
   margin-bottom: 1rem;
   &-light {
-    box-shadow: 0px 4px 5px $light-shadowbtn;
+    box-shadow: 0 4px 5px $light-shadowbtn;
   }
   &-dark {
-    box-shadow: 0px 4px 5px $dark-fg;
+    box-shadow: 0 4px 5px $dark-fg;
   }
 }

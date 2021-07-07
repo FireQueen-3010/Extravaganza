@@ -29,15 +29,13 @@ export default function Typography(props) {
       <div className="typography-2">
         {dark ? (
           <img
-            className="ambaasador-dark"
+            className="ambaasador-dark typography-2--img"
             src="Images/Ambassador-Dark.svg"
-            className="typography-2--img"
           ></img>
         ) : (
           <img
-            className="ambaasador-light"
+            className="ambaasador-light typography-2--img"
             src="Images/Ambassador-Light.svg"
-            className="typography-2--img"
           ></img>
         )}
       </div>
