@@ -27,8 +27,3 @@ export default function SubTypography(props) {
     </div>
   );
 }
-
-
-
-
-
