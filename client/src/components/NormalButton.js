@@ -8,3 +8,5 @@ export default function NormalButton(props) {
     </div>
   );
 }
+
+
