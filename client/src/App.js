@@ -26,7 +26,7 @@ function App() {
   }, [theme]);
 
   return (
-    <div className={`App ${theme == "dark" ? "App-dark" : "App-light"}`}>
+    <div className={`App ${theme === "dark" ? "App-dark" : "App-light"}`}>
       <Router>
         <Navbar handleClick={toggleTheme} theme={theme} />
         <Switch>

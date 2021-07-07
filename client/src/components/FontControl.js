@@ -5,20 +5,20 @@ export default function FontControl(props) {
   const type = props.type;
   const text = props.text;
   const clr = props.clr;
-  var className = "RegLato";
+  var className = "reglato";
 
   const classname = (font, size) => {
-    if (size == "regular") {
+    if (size === "regular") {
       //weight: 400
-      className = font == "lato" ? "RegLato" : "Reglora";
+      className = font === "lato" ? "reglato" : "reglora";
     }
-    if (size == "semi-bold") {
+    if (size === "semi-bold") {
       //weight: 600
-      className = font == "lato" ? "SemiLato" : "Semilora";
+      className = font === "lato" ? "semilato" : "Semilora";
     }
-    if (size == "bold") {
+    if (size === "bold") {
       //weight: 700
-      className = font == "lato" ? "BoldLato" : "Boldlora";
+      className = font === "lato" ? "boldlato" : "boldlora";
     }
   };
 
@@ -26,7 +26,7 @@ export default function FontControl(props) {
 
   return (
     <>
-      {type == "h1" ? (
+      {type === "h1" ? (
         <h1
           className={`font-control-h1 ${
             dark ? "font-control--dark" : "font-control--light"
@@ -34,7 +34,7 @@ export default function FontControl(props) {
         >
           {text}
         </h1>
-      ) : type == "h2" ? (
+      ) : type === "h2" ? (
         <h2
           className={`font-control-h2 ${
             dark ? "font-control--dark" : "font-control--light"
@@ -42,7 +42,7 @@ export default function FontControl(props) {
         >
           {text}
         </h2>
-      ) : type == "h3" ? (
+      ) : type === "h3" ? (
         <h3
           className={`font-control-h3 ${
             dark ? "font-control--dark" : "font-control--light"
@@ -50,7 +50,7 @@ export default function FontControl(props) {
         >
           {text}
         </h3>
-      ) : type == "h4" ? (
+      ) : type === "h4" ? (
         <h4
           className={`font-control-h4 ${
             dark ? "font-control--dark" : "font-control--light"

@@ -1,18 +1,18 @@
 //base
-@import "./base/variables.scss";
-@import "./base/root.scss";
+@import "./base/variables";
+@import "./base/root";
 
 //components
-@import "./components/navbar.scss";
-@import "./components/button.scss";
-@import "./components/embossedbutton.scss";
-@import "./components/fontControl.scss";
-@import "./components/typography.scss";
-@import "./components/subtypo.scss";
-@import "./components/footer.scss";
-@import "./components/toggletheme.scss";
+@import "./components/navbar";
+@import "./components/button";
+@import "./components/embossedbutton";
+@import "./components/fontControl";
+@import "./components/typography";
+@import "./components/subtypo";
+@import "./components/footer";
+@import "./components/toggletheme";
 
 //pages
-@import "./pages/home.scss";
-@import "./pages/about.scss";
-@import "./pages/not-found.scss";
+@import "./pages/home";
+@import "./pages/about";
+@import "./pages/not-found";

@@ -20,12 +20,12 @@ $font2: "Shadows Into Light", cursive;
 
 //exporting to be used in javascript
 :export {
-  lightBackground: $light-bg;
-  darkBackground: $dark-bg;
-  lightForeground: $light-fg;
-  darkForeground: $dark-fg;
-  lightColor1: $light-color1;
-  lightColor2: $light-color2;
-  darkColor1: $dark-color1;
-  darkColor2: $dark-color2;
+  dark-background: $dark-bg;
+  dark-color1: $dark-color1;
+  dark-color2: $dark-color2;
+  dark-foreground: $dark-fg;
+  light-background: $light-bg;
+  light-color1: $light-color1;
+  light-color2: $light-color2;
+  light-foreground: $light-fg;
 }
