@@ -36,7 +36,11 @@ export default function Footer(props) {
           />
         </div>
         <div className="footer-inner--4">
-          <a href="https://github.com/FireQueen-3010" target="_blank" rel="noreferrer">
+          <a
+            href="https://github.com/FireQueen-3010"
+            target="_blank"
+            rel="noreferrer"
+          >
             <FontControl
               size="bold"
               font="lora"
