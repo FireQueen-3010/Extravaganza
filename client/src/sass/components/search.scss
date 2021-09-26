@@ -1,0 +1,11 @@
+.search {
+  display: flex;
+  justify-content: flex-end;
+  padding: 2rem;
+  &--input {
+    padding: 1rem;
+    border-radius: 2rem;
+    outline: none;
+    border: none;
+  }
+}

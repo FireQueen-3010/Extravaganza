@@ -2,11 +2,10 @@ import { useState, useEffect } from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Home from "./pages/Home/Home";
 import About from "./pages/About";
-import Login from "./pages/Login";
-import GetStarted from "./pages/GetStarted";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import PageNotFound from "./pages/PageNotFound";
+import Feed from "./pages/Feed/Feed";
 
 function App() {
   const getTheme = () => {
@@ -30,17 +29,14 @@ function App() {
       <Router>
         <Navbar handleClick={toggleTheme} theme={theme} />
         <Switch>
-          <Route exact path="/about">
-            <About theme={theme} />
-          </Route>
-          <Route exact path="/login">
-            <Login theme={theme} />
-          </Route>
           <Route exact path="/">
             <Home theme={theme} />
           </Route>
-          <Route exact path="/start">
-            <GetStarted theme={theme} />
+          <Route exact path="/about">
+            <About theme={theme} />
+          </Route>
+          <Route>
+            <Feed exact path="/feed" theme={theme} />
           </Route>
           <Route>
             <PageNotFound theme={theme} />

@@ -1,0 +1,43 @@
+.movie-box {
+  margin: 3rem 3rem;
+  display: flex;
+  flex-direction: column;
+  max-width: 32vh;
+  transition: 0.8s ease-out;
+  min-height: 30rem;
+  &--heading {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+    &-dark {
+      color: $dark-color1;
+    }
+    &-light {
+      color: $light-color1;
+    }
+  }
+  &--rating {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+    &-dark {
+      color: $dark-color2;
+    }
+    &-light {
+      color: $light-color2;
+    }
+    &-rated {
+      &-dark {
+        color: $dark-color2;
+      }
+      &-light {
+        color: $light-color2;
+      }
+    }
+  }
+
+  &:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+  }
+}
