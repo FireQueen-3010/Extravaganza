@@ -58,6 +58,15 @@ export default function FontControl(props) {
         >
           {text}
         </h4>
+      ) : type === "link" ? (
+        <a
+          href={props.link}
+          className={`font-control-h4 ${
+            dark ? "font-control--dark" : "font-control--light"
+          } ${className} ${clr}`}
+        >
+          {text}
+        </a>
       ) : (
         <p
           className={`font-control-p ${

@@ -1,0 +1,31 @@
+.form {
+  padding: 3rem;
+  border-radius: 26px;
+  &-light {
+    background: $light-fg;
+    box-shadow: 7px 7px 4px rgba(240, 228, 215, 0.25);
+  }
+  &-dark {
+    background: $dark-fg;
+    box-shadow: 7px 7px 4px rgba(165, 225, 173, 0.25);
+  }
+  &--head {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  &--inside {
+    display: flex;
+    flex-direction: column;
+    &-label {
+      margin-bottom: 1rem;
+      margin-left: 0.5rem;
+    }
+
+    &-email {
+      margin-bottom: 2rem;
+    }
+    &-password {
+      margin-bottom: 2rem;
+    }
+  }
+}

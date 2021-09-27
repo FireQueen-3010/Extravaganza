@@ -1,0 +1,24 @@
+.login {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  &-light {
+    background-color: $light-bg;
+  }
+  &-dark {
+    background-color: $dark-bg;
+  }
+  &--third-party {
+    &-1 {
+      margin-bottom: 2rem;
+    }
+    &-2 {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 2rem;
+    }
+  }
+}

@@ -1,0 +1,20 @@
+.spl-btn {
+  padding: 0.8rem 2rem;
+  border-radius: 26px;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  &-light {
+    color: $light-bg;
+    background-color: $light-color2;
+    box-shadow: 7px 7px 4px rgba(240, 228, 215, 0.25);
+  }
+  &-dark {
+    color: $dark-color1;
+    background-color: $dark-fg;
+    box-shadow: 7px 7px 4px rgba(165, 225, 173, 0.25);
+  }
+  &--text {
+    font-size: 1rem;
+  }
+}

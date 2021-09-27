@@ -17,6 +17,7 @@ export default function Box({ movie, theme }) {
       setStars(data.imdbRating);
       setDesc(data.Plot);
       setRating(data.Rated);
+      console.log(data);
     }
   };
 

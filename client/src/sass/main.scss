@@ -1,6 +1,7 @@
 //base
 @import "./base/variables";
 @import "./base/root";
+@import "./base/mixins";
 
 //components
 @import "./components/navbar";
@@ -13,9 +14,13 @@
 @import "./components/toggletheme";
 @import "./components/box";
 @import "./components/search";
+@import "./components/form-control";
+@import "./components/special-button.scss";
 
 //pages
 @import "./pages/home";
 @import "./pages/about";
 @import "./pages/not-found";
 @import "./pages/feed";
+@import "./pages/login";
+@import "./pages/sign-up";

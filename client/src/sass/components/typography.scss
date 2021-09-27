@@ -19,3 +19,9 @@
 .ambaasador-light {
   left: 2rem;
 }
+
+@media (max-width: 800px) {
+  .typography {
+    flex-direction: column;
+  }
+}

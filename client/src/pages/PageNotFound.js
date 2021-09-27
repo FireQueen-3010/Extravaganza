@@ -30,7 +30,12 @@ export default function PageNotFound(props) {
           clr={dark ? "darkClr1" : "lightClr1"}
         />
       </div>
-      <EmbossedButton text="Home" link="/" theme={dark} />
+      <EmbossedButton
+        text="Home"
+        link="/"
+        theme={dark}
+        clr={dark ? "darkClr2" : "lightClr1"}
+      />
     </div>
   );
 }

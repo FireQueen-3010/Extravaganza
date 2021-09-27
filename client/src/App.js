@@ -6,6 +6,8 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import PageNotFound from "./pages/PageNotFound";
 import Feed from "./pages/Feed/Feed";
+import Login from "./pages/Login";
+import SignUp from "./pages/SignUp";
 
 function App() {
   const getTheme = () => {
@@ -35,8 +37,14 @@ function App() {
           <Route exact path="/about">
             <About theme={theme} />
           </Route>
-          <Route>
-            <Feed exact path="/feed" theme={theme} />
+          <Route exact path="/feed">
+            <Feed theme={theme} />
+          </Route>
+          <Route exact path="/login">
+            <Login theme={theme} />
+          </Route>
+          <Route exact path="/sign-up">
+            <SignUp theme={theme} />
           </Route>
           <Route>
             <PageNotFound theme={theme} />

@@ -28,7 +28,7 @@ export default function Feed(props) {
       <Search search={search} setSearch={setSearch} />
       <div className="feed-container">
         {movieList.map((movie, index) => (
-          <Box movie={movie} theme={dark} />
+          <Box key={movie.imdbID} movie={movie} theme={dark} />
         ))}
       </div>
     </div>

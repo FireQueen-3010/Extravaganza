@@ -1,19 +1,12 @@
-.home {
+.sign-up {
   min-height: 100vh;
-  margin: 0;
-  padding: 0;
   display: flex;
-  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   &-light {
     background-color: $light-bg;
   }
   &-dark {
     background-color: $dark-bg;
-  }
-}
-
-@media (max-width: 750px) {
-  .home {
-    min-height: auto;
   }
 }

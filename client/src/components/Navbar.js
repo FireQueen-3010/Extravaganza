@@ -2,7 +2,6 @@ import { ReactComponent as LogoLight } from "../images/Logo-Light.svg";
 import { ReactComponent as LogoDark } from "../images/Logo-Dark.svg";
 import Toggle from "./ToggleTheme";
 import Button from "./NormalButton";
-import EmbossedButton from "./EmbossedButton";
 
 export default function Navbar(props) {
   const dark = props.theme;
@@ -20,9 +19,24 @@ export default function Navbar(props) {
         </a>
       </div>
       <div className="navbar-buttonbox">
-        <Button text="About" link="/about" theme={dark} />
-        <Button text="Feed" link="/feed" theme={dark} />
-        <EmbossedButton text="Login" link="/login" theme={dark} />
+        <Button
+          text="About"
+          link="/about"
+          theme={dark}
+          clr={dark ? "darkClr2" : "lightClr1"}
+        />
+        <Button
+          text="Feed"
+          link="/feed"
+          theme={dark}
+          clr={dark ? "darkClr2" : "lightClr1"}
+        />
+        <Button
+          text="Login"
+          link="/login"
+          theme={dark}
+          clr={dark ? "darkClr2" : "lightClr1"}
+        />
         <Toggle theme={dark} handleClick={props.handleClick} />
       </div>
     </div>

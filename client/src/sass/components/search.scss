@@ -3,9 +3,16 @@
   justify-content: flex-end;
   padding: 2rem;
   &--input {
-    padding: 1rem;
+    padding: 0.7rem 1rem;
     border-radius: 2rem;
     outline: none;
     border: none;
+    min-width: 15vw;
+    &-dark {
+      @include dark-shadow;
+    }
+    &-light {
+      @include light-shadow;
+    }
   }
 }

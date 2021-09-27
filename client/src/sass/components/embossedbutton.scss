@@ -3,10 +3,12 @@
   height: 1.7rem;
   width: 5rem;
   margin-bottom: 1rem;
+  text-align: center;
+  cursor: pointer;
   &-light {
-    box-shadow: 0 4px 5px $light-shadowbtn;
+    @include light-shadow;
   }
   &-dark {
-    box-shadow: 0 4px 5px $dark-fg;
+    @include dark-shadow;
   }
 }

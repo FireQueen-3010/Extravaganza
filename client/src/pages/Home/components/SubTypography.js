@@ -20,7 +20,7 @@ export default function SubTypography(props) {
           font="lato"
           theme={dark}
           type="h3"
-          text="Get intelligent recommendations based on your input data | Get latest news about movies and shows | Connect with others all in one platform"
+          text="Access information regarding your favourite shows and movies | Get latest news about movies and shows | Connect with others all in one platform"
           clr={dark ? "darkClr2" : "lightClr2"}
         />
       </div>
