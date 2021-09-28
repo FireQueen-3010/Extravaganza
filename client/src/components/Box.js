@@ -1,10 +1,13 @@
 import { AiTwotoneStar } from "react-icons/ai";
 import { useState, useEffect } from "react";
+import Modal from "./DetailModal";
 
 export default function Box({ movie, theme }) {
   const [stars, setStars] = useState([]);
   const [desc, setDesc] = useState([]);
   const [rating, setRating] = useState([]);
+  // const [isOpen, setIsOpen] = useState([]);
+  const [movieData, setMovieData] = useState([]);
   const dark = theme;
 
   const getRating = async () => {
@@ -17,6 +20,7 @@ export default function Box({ movie, theme }) {
       setStars(data.imdbRating);
       setDesc(data.Plot);
       setRating(data.Rated);
+      setMovieData(data);
       console.log(data);
     }
   };
@@ -24,6 +28,10 @@ export default function Box({ movie, theme }) {
   useEffect(() => {
     getRating();
   }, [rating, desc, stars]);
+
+  // const setOpen = (status) => {
+  //   setIsOpen(status);
+  // };
 
   return (
     <div className={`movie-box ${dark ? "movie-box-dark" : "movie-box-light"}`}>
@@ -34,6 +42,7 @@ export default function Box({ movie, theme }) {
       >
         {movie.Title}
       </h1>
+
       <img
         className={`movie-box--poster ${
           dark ? "movie-box--poster-dark" : "movie-box--poster-light"
@@ -42,6 +51,7 @@ export default function Box({ movie, theme }) {
         src={movie.Poster}
         alt="movie"
       ></img>
+
       <div
         className={`movie-box--rating ${
           dark ? "movie-box--rating-dark" : "movie-box--rating-light"
@@ -60,6 +70,13 @@ export default function Box({ movie, theme }) {
         >
           {rating}
         </div>
+      </div>
+      <div
+        className={`movie-box--modal ${
+          dark ? "movie-box--modal-dark" : "movie-box--modal-light"
+        }`}
+      >
+        <Modal data={movieData} />
       </div>
     </div>
   );
