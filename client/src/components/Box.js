@@ -1,13 +1,18 @@
 import { AiTwotoneStar } from "react-icons/ai";
 import { useState, useEffect } from "react";
-import Modal from "./DetailModal";
+import Modal from "react-modal";
 
 export default function Box({ movie, theme }) {
   const [stars, setStars] = useState([]);
   const [desc, setDesc] = useState([]);
   const [rating, setRating] = useState([]);
-  // const [isOpen, setIsOpen] = useState([]);
   const [movieData, setMovieData] = useState([]);
+  const [isOpen, setIsOpen] = useState(false);
+
+  function toggleModal() {
+    setIsOpen(!isOpen);
+  }
+
   const dark = theme;
 
   const getRating = async () => {
@@ -29,10 +34,6 @@ export default function Box({ movie, theme }) {
     getRating();
   }, [rating, desc, stars]);
 
-  // const setOpen = (status) => {
-  //   setIsOpen(status);
-  // };
-
   return (
     <div className={`movie-box ${dark ? "movie-box-dark" : "movie-box-light"}`}>
       <h1
@@ -43,14 +44,16 @@ export default function Box({ movie, theme }) {
         {movie.Title}
       </h1>
 
-      <img
-        className={`movie-box--poster ${
-          dark ? "movie-box--poster-dark" : "movie-box--poster-light"
-        }`}
-        className="movie-box--poster"
-        src={movie.Poster}
-        alt="movie"
-      ></img>
+      <a onClick={toggleModal}>
+        <img
+          className={`movie-box--poster ${
+            dark ? "movie-box--poster-dark" : "movie-box--poster-light"
+          }`}
+          className="movie-box--poster"
+          src={movie.Poster}
+          alt="movie"
+        ></img>
+      </a>
 
       <div
         className={`movie-box--rating ${
@@ -76,7 +79,14 @@ export default function Box({ movie, theme }) {
           dark ? "movie-box--modal-dark" : "movie-box--modal-light"
         }`}
       >
-        <Modal data={movieData} />
+        <Modal
+          isOpen={isOpen}
+          onRequestClose={toggleModal}
+          contentLabel="My dialog"
+        >
+          <div>{movieData.Title}</div>
+          <button onClick={toggleModal}>Close modal</button>
+        </Modal>
       </div>
     </div>
   );
