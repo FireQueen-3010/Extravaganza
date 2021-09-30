@@ -1,0 +1,54 @@
+.modal {
+  &-box {
+    margin: 6rem 2rem;
+    min-height: 70vh;
+    outline: none;
+    border-radius: 2rem;
+  }
+  &-box--dark {
+    background-color: $dark-bg;
+    border: 2px solid $dark-color1;
+    @include dark-shadow;
+  }
+  &-box--light {
+    background-color: $light-color1;
+    border: 2px solid $light-color2;
+    @include light-shadow;
+  }
+  &--close {
+    display: flex;
+    justify-content: flex-end;
+    &-inside {
+      cursor: pointer;
+      margin: 0.5rem 2rem;
+      border: none;
+      background: transparent;
+      &-dark {
+        color: $dark-color1;
+      }
+      &-light {
+        color: $light-color2;
+      }
+    }
+  }
+  &--details {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 1.5rem;
+    &-inside {
+      display: flex;
+      flex-direction: column;
+      margin-top: 1rem;
+      & > * {
+        display: flex;
+
+        & > * {
+          margin-right: 1rem;
+        }
+      }
+      & > :not(first-child) {
+        margin-top: 1rem;
+      }
+    }
+  }
+}

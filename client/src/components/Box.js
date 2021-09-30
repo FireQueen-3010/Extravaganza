@@ -1,6 +1,7 @@
 import { AiTwotoneStar } from "react-icons/ai";
 import { useState, useEffect } from "react";
 import Modal from "react-modal";
+import Font from "./FontControl";
 
 export default function Box({ movie, theme }) {
   const [stars, setStars] = useState([]);
@@ -83,9 +84,178 @@ export default function Box({ movie, theme }) {
           isOpen={isOpen}
           onRequestClose={toggleModal}
           contentLabel="My dialog"
+          className={`modal-box ${
+            dark ? "modal-box--dark" : "modal-box--light"
+          }`}
         >
-          <div>{movieData.Title}</div>
-          <button onClick={toggleModal}>Close modal</button>
+          <div className="modal--close">
+            <button
+              className={`modal--close-inside ${
+                dark ? "modal--close-inside-dark" : "modal--close-inside-light"
+              }`}
+              onClick={toggleModal}
+            >
+              ✖
+            </button>
+          </div>
+          <div className="modal--details">
+            <div className="modal--details-heading">
+              <Font
+                theme={dark}
+                text="Details "
+                font="lato"
+                size="semi-bold"
+                type="h2"
+                clr={dark ? "darkClr2" : "lightClr2"}
+              />
+            </div>
+            <div className="modal--details-inside">
+              <div className="modal--details-inside-1">
+                <Font
+                  theme={dark}
+                  text="Title: "
+                  font="lato"
+                  size="regular"
+                  type="h3"
+                  clr={dark ? "darkClr1" : "lightBg"}
+                />
+                <Font
+                  theme={dark}
+                  text={movieData.Title}
+                  font="lato"
+                  size="regular"
+                  type="h3"
+                  clr={dark ? "darkClr1" : "lightBg"}
+                />
+              </div>
+              <div className="modal--details-inside-2">
+                <Font
+                  theme={dark}
+                  text="Released date: "
+                  font="lato"
+                  size="regular"
+                  type="h3"
+                  clr={dark ? "darkClr1" : "lightBg"}
+                />
+                <Font
+                  theme={dark}
+                  text={movieData.Released}
+                  font="lato"
+                  size="regular"
+                  type="h3"
+                  clr={dark ? "darkClr1" : "lightBg"}
+                />
+              </div>
+              <div className="modal--details-inside-3">
+                <Font
+                  theme={dark}
+                  text="Genre: "
+                  font="lato"
+                  size="regular"
+                  type="h3"
+                  clr={dark ? "darkClr1" : "lightBg"}
+                />
+                <Font
+                  theme={dark}
+                  text={movieData.Genre}
+                  font="lato"
+                  size="regular"
+                  type="h3"
+                  clr={dark ? "darkClr1" : "lightBg"}
+                />
+              </div>
+              <div className="modal--details-inside-4">
+                <Font
+                  theme={dark}
+                  text="Duration: "
+                  font="lato"
+                  size="regular"
+                  type="h3"
+                  clr={dark ? "darkClr1" : "lightBg"}
+                />
+                <Font
+                  theme={dark}
+                  text={movieData.Runtime}
+                  font="lato"
+                  size="regular"
+                  type="h3"
+                  clr={dark ? "darkClr1" : "lightBg"}
+                />
+              </div>
+              <div className="modal--details-inside-5">
+                <Font
+                  theme={dark}
+                  text="Language: "
+                  font="lato"
+                  size="regular"
+                  type="h3"
+                  clr={dark ? "darkClr1" : "lightBg"}
+                />
+                <Font
+                  theme={dark}
+                  text={movieData.Language}
+                  font="lato"
+                  size="regular"
+                  type="h3"
+                  clr={dark ? "darkClr1" : "lightBg"}
+                />
+              </div>
+              <div className="modal--details-inside-6">
+                <Font
+                  theme={dark}
+                  text="Storyline: "
+                  font="lato"
+                  size="regular"
+                  type="h3"
+                  clr={dark ? "darkClr1" : "lightBg"}
+                />
+                <Font
+                  theme={dark}
+                  text={movieData.Plot}
+                  font="lato"
+                  size="regular"
+                  type="h3"
+                  clr={dark ? "darkClr1" : "lightBg"}
+                />
+              </div>
+              <div className="modal--details-inside-7">
+                <Font
+                  theme={dark}
+                  text="Cast: "
+                  font="lato"
+                  size="regular"
+                  type="h3"
+                  clr={dark ? "darkClr1" : "lightBg"}
+                />
+                <Font
+                  theme={dark}
+                  text={movieData.Actors}
+                  font="lato"
+                  size="regular"
+                  type="h3"
+                  clr={dark ? "darkClr1" : "lightBg"}
+                />
+              </div>
+              <div className="modal--details-inside-8">
+                <Font
+                  theme={dark}
+                  text="Imdb Rating: "
+                  font="lato"
+                  size="regular"
+                  type="h3"
+                  clr={dark ? "darkClr1" : "lightBg"}
+                />
+                <Font
+                  theme={dark}
+                  text={movieData.imdbRating}
+                  font="lato"
+                  size="regular"
+                  type="h3"
+                  clr={dark ? "darkClr1" : "lightBg"}
+                />
+              </div>
+            </div>
+          </div>
         </Modal>
       </div>
     </div>
