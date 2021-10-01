@@ -26,8 +26,8 @@ export default function Navbar(props) {
           clr={dark ? "darkClr2" : "lightClr1"}
         />
         <Button
-          text="Feed"
-          link="/feed"
+          text="Browse"
+          link="/shows-movies"
           theme={dark}
           clr={dark ? "darkClr2" : "lightClr1"}
         />
